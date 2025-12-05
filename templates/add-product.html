@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Lugx Gaming - Shop Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-lugx-gaming.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 589 lugx gaming
+
+https://templatemo.com/tm-589-lugx-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Add Game Section Start ***** -->
+  <div class="section trending">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+ 
+                <div class="item p-5" style="border-radius: 15px; background:#0071f8; box-shadow:0 0 10px rgba(255,0,0,0.2);">
+                    <h2 class="text-light text-center mb-4">Add New Game</h2>
+
+                    <form action="#" method="POST" enctype="multipart/form-data">
+
+                        <div class="mb-3">
+                            <label class="text-light mb-2">Game Title</label>
+                            <input type="text" class="form-control" placeholder="Enter game name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="text-light mb-2">Category</label>
+                            <select class="form-control">
+                                <option>Action</option>
+                                <option>Adventure</option>
+                                <option>Racing</option>
+                                <option>Strategy</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="text-light mb-2">Price</label>
+                            <input type="number" class="form-control" placeholder="Enter price">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="text-light mb-2">Upload Image</label>
+                            <input type="file" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="text-light mb-2">Description</label>
+                            <textarea class="form-control" rows="4" placeholder="Enter description"></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger px-5 py-2" 
+                                style="background:#ff5a5a;border:none;border-radius:10px;font-weight:600;">
+                                + Add Game
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- ***** Add Game Section End ***** -->
+
+  <!-- Scripts -->
+
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/isotope.min.js' %}"></script>
+  <script src="{% static 'js/owl-carousel.js' %}"></script>
+  <script src="{% static 'js/counter.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
