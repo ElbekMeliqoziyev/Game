@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block link %}
+<li><a href="{% url 'create' %}">Add Product</a></li>
+{% endblock %}
+
 {% block head %}
                     <a class='menu-trigger'>
                         <span>Menu</span>

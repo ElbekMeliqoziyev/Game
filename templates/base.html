@@ -50,15 +50,18 @@ https://templatemo.com/tm-589-lugx-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="{% url 'home' %}" class="logo">
                         <img src="{% static 'assets/images/logo.png' %}" alt="" style="width: 158px;">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Home</a></li>
+                      <li><a href="{% url 'home' %}">Home</a></li>
                       <li><a href="shop.html" class="active">Our Shop</a></li>
                       <li><a href="product-details.html">Product Details</a></li>
+                      {% block link %}
+
+                      {% endblock %}
                       <li><a href="contact.html">Contact Us</a></li>
                       <li><a href="#">Sign In</a></li>
                   </ul> 
